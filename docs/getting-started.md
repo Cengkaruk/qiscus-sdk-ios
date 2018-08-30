@@ -281,7 +281,7 @@ In some cases, you may need to add additional participants into your room chat o
 
 ```
 Qiscus.addParticipant(onRoomId: "123", userIds: ["123"], onSuccess: { (qRoom) in }) { (userIds, id) in }
-QiscusApi.getInstance().removeRoomMember(roomId, emails)
+Qiscus.removeParticipant(onRoom: "123", userIds: ["123"], onSuccess: { (qRoom) in }) { (userIds, id) in }
 ```
 
 
